@@ -1,12 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import Home from "./pages/Home/Home";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Erro from "./pages/404/index";
+import Cadastro from "./pages/Cadastro/index";
+import CadastroCategoria from "./pages/Cadastro/Categoria/index";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" component={Home} exact />
+      <Route path="/cadastro/video" component={Cadastro} />
+      <Route path="/cadastro/categoria" component={CadastroCategoria} />
+      <Route component={Erro} />
+    </Switch>
+  </BrowserRouter>,
+
   document.getElementById("root")
 );
 
