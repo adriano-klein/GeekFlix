@@ -28,9 +28,7 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    const URL = window.location.hostname.includes("localhost")
-      ? "http://localhost:8080"
-      : "https://geekflix.herokuapp.com/categorias";
+    const URL = "https://geekflix.herokuapp.com/categorias";
     fetch(URL).then(async (respostaDoServidor) => {
       const resposta = await respostaDoServidor.json();
       setCategorias([...resposta]);
