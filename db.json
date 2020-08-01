@@ -1,0 +1,16 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Front End",
+      "descricao": "Categoria da hora",
+      "cor": "cb21ff"
+    },
+    {
+      "id": 2,
+      "nome": "Back End",
+      "descricao": " Mais uma categoria da hora",
+      "cor": "cb2199"
+    }
+  ]
+}
